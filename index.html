@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Online Portfolio Tutorial</title>
+  <link rel="stylesheet" href="main.css" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Jacques+Francois' rel='stylesheet' type='text/css'>  </head>
+
+
+  <body>
+
+
+
+<div id="container" class="exercise">
+
+
+  <div id="exercise">
+  <h1>An Online Portfolio – From Scratch!</h1>
+  <h3>Lena Groeger, ProPublica</h3>
+      <div>
+      <h2>Part 1: Let's Make a Website</h2></div>
+
+      <p>1. Go to <a target="_blank" href="https://github.com/">Github</a> and sign up for a new account if you don't already have one. Don't worry, Github isn't scary! We'll walk through it together.  </p>
+      <img src="img/github1.jpg">
+      <p>2. Now that you have a brand new Github account, complete steps 1 & 2 of <a target="_blank" href="https://guides.github.com/activities/hello-world/">this Github tutorial</a>. You should end up with a new repo, called <strong>hello-world</strong>.</p>
+
+
+
+
+      <p>3. Now that you've learned how to make a new branch, make another branch called <strong>gh-pages</strong>. Make sure you include that dash!</p>
+
+
+
+      <p>4. Now let's make a new file. Click on "New File". You'll be taken to a new page</p>
+      <img src="img/newfile.jpg">
+      <p> 5. You'll have the option to "Name your file..." Let's name it <strong>index.html</strong> </p>
+      <img src="img/nameyourfile.jpg">
+      <p> 6. We're also going to put in the following text into this new file: <code>&lt;h1&gt;My New Website&lt;/h1&gt;</code> </p>
+      <img src="img/newwebsite.jpg">
+
+      <p> 7. Now scroll down to the bottom and click "Commit new file" </p>
+      <img src="img/commit.jpg">
+
+      <p> 8. Now navigate to the following url: <strong>[github-username].github.io/[your-repo-name]</strong>. Your repo will likely be "hello-world". Since I called mine "sample," my url is: <strong>lenagroeger.github.io/sample</strong></p>
+      <img src="img/sample.jpg">
+
+      <p>Congrats! Now you have your own website, hosted on the internet for free!</p>
+
+      <img src="img/leo.gif">
+
+      <p>But this is just the beginning. Now we have to write all the HTML and CSS to make your pages more than just a blank white page with "My New Website." That's what we'll do next.</p>
+
+
+      <h2>Part 2: Build your Online Portfolio</h2>
+
+      <p>1. First, figure out what you want to include (first off, your name should probably go on there). But what about links to clips and projects? Photos? A bio? A contact section? All of this is up to you.</p>
+
+      <p>2. Your online portfolio can be whatever you'd like. But for the purposes of today (and of providing you with a bare minimum by the end of class), we're going to start with this template: <a href="http://lenagroeger.s3.amazonaws.com/makeawebsite/template.html" download>template.html</a></p>
+
+      <p>3. In Github, click on the Edit button (it looks like a pencil) in the top right corner of your <strong>index.html</strong> page. </p>
+
+      <img src="img/edit.jpg">
+
+      <p>4. Open up <strong>template.html</strong> in a Text Editor, Select All and Copy. Paste the contents of the <strong>template.html</strong> file into your <strong>index.html</strong> page, replacing <code>&lt;h1&gt;My New Website&lt;/h1&gt;</code> It should look like this:</p>
+
+      <img src="img/paste.jpg">
+
+       <p>5. Commit that change by clicking the green "Commit Changes" button, and refresh your website (the URL that looks something like <strong>lenagroeger.github.io/sample</strong>)</p>
+
+       <p>6. You should see the new portfolio template hosted at your own website: </p>
+        <img src="img/template.jpg">
+
+      <p>7. That wasn't so bad, right? Now, it's time to customize! Click on the pencil button to edit, your <strong>index.html</strong> file again, and this time scroll down to the part that says "My Online Portfolio" and change it to your own name.</p>
+
+      <img src="img/online.jpg">
+
+      <p>8. Feel free to go ahead and change more text. Add a section header instead of "2 Column Section", and add in your own contact information.</p>
+
+      <p>9. The last thing we'll do is change that grey box into a photo. We'll test it out using this photo:</p>
+      <a href="img/water.jpg" download><img src="img/water.jpg"></a></br>
+      <span class="label"><a href="img/water.jpg" download>Download the photo &raquo;</a></span>
+
+      <p>10. Navigate back to your repo page by clicking on the "Code" tab in the top left of the page. </p>
+       <img src="img/code.jpg">
+
+       <p>11. Then click on "Upload files"</p>
+       <img src="img/upload.jpg">
+
+       <p>12. And drag in the <strong>water.jpg</strong> file.</p>
+       <img src="img/drag.jpg">
+
+       <p>13. Commit those changes, and you've just added your first image to the repo!</p>
+
+       <p>14. Now back in the <strong>index.html</strong> file, find a place that says: <code>img src=""</code>. Inside those quotation marks, add <code>water.jpg</code>. Your code should now look like: <code>&lt;img src="water.jpg"&gt;</code></p>
+
+       <p>15. Refresh the page, and your image should be there!</p>
+
+       <img src="img/photo.jpg">
+
+       <p>16. See if you can change the title above that image to the title of the piece, like so:</p>
+
+        <img src="img/title.jpg">
+
+        <p>17. Finally, we'll add a link to the real article I stole this image from: <a href="http://scienceline.org/2015/04/from-pollution-to-power/">http://scienceline.org/2015/04/from-pollution-to-power/</a></p>
+
+        <p>18. A link in HTML looks like this: <code>&lt;a href="URL"&gt; STUFF YOU WANT LINKED &lt;a&gt;</code> </p>
+
+        <p>So in our case, we'll link the title. It should look like: <code>&lt;a href="http://scienceline.org/2015/04/from-pollution-to-power/"&gt; From Pollution to Power&lt;a&gt;</code></p>
+
+        <p>Here's how that looks in our <strong>index.html</strong> file.</p>
+
+        <img src="img/link.jpg">
+
+        <p>BONUS: Can you link the image as well?</p>
+
+
+      <p>19. Keep editing text and adding images, and we'll talk a bit more about how HTML and CSS work.</p>
+
+      <h2>Part 3: Resources</h2>
+
+      <p>Of course, many of you will want to do more that just the basic template. There are a ton of templates out on the internet (some better than others). Here are two I like: </p>
+
+      <ul>
+        <li><a href="http://thomsoon.com/thomsoon/demo/">http://thomsoon.com/thomsoon/demo/</a></li>
+        <li><a href="http://www.typeandgrids.com/">http://www.typeandgrids.com/</a></li>
+
+      </ul>
+
+    <p> And here are a number of online portfolios that may be useful for a bit of inspiraton: </p>
+
+      <ul>
+        <li><a target="_blank" href="http://strangelove.me/">http://strangelove.me/</a></li>
+        <li><a target="_blank" href="http://www.jessewillmon.com/new_portfolio/illustration/">http://www.jessewillmon.com/new_portfolio/illustration/</a></li>
+        <li><a target="_blank" href="http://www.trademark-trademark.com/">http://www.trademark-trademark.com/</a></li>
+        <li><a target="_blank" href="http://www.jonbrousseau.com/">http://www.jonbrousseau.com/</a></li>
+        <li><a target="_blank" href="http://coopgrafik.com/portfolio/">http://coopgrafik.com/portfolio/</a></li>
+        <li><a target="_blank" href="http://www.mypoorbrain.com/">http://www.mypoorbrain.com/</a></li>
+      </ul>
+
+
+    <p>Finally, you may eventually want to go beyond editing a single file using GitHub in the browser. Take a look at <a href="https://desktop.github.com/">GitHub for Desktop</a>, or, if you're feeling adventurous, try out the <a href="https://help.github.com/articles/set-up-git/">Command Line</a>. </p>
+
+    <p>I hope that was helpful. If you want to dive more into this stuff, here's a <a href="http://lenagroeger.s3.amazonaws.com/talks/common/resources.html">big list of resources</a> I've created. And feel free to get in touch: <a href="https://twitter.com/lenagroeger">@lenagroeger</a> or <a a href="mailto:lena.groeger@propublica.org">lena.groeger@propublica.org</a>. Best of luck in your coding adventures!</p>
+    </div>
+</div>
+
+
+  </body>
+</html>
